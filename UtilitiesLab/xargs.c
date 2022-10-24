@@ -57,47 +57,6 @@ int main(int argc, char *argv[])
         p++;
         memset(exbuf, 0, strlen(exbuf));
     }
-    // if (*p == 0)
-    // {
-    //     while (q != p)
-    //     {
-    //         while (*q != ' ')
-    //         {
-    //             q++;
-    //         }
-    //         if (i < MAXARG)
-    //         {
-    //             memmove(arg[i++], m, q - m);
-    //             q++;
-    //             m = q;
-    //         }
-    //     }
-    //     if (fork() == 0)
-    //     {
-    //         if (strcmp("-n", argv[1]))
-    //         {
-    //             memmove(cmd, argv[3], strlen(argv[3]));
-    //         }
-    //         else
-    //         {
-    //             memmove(cmd, argv[1], strlen(argv[1]));
-    //         }
-    //         j = argc;
-    //         n = 0;
-    //         while (n < i && j < MAXARG)
-    //         {
-    //             strcpy(argv[j++], arg[n++]);
-    //         }
-    //         if (j != MAXARG)
-    //         {
-    //             argv[j] = 0;
-    //         }
-    //         exec(cmd, argv);
-    //         exit(0);
-    //     }
-    //     wait(0);
-    //     q++;
-    //     m = q;
-    // }
+    q;
     exit(0);
 }
