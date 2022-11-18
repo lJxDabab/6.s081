@@ -1,0 +1,4 @@
+Q:Why are there missing keys with 2 threads, but not with 1 thread? Identify a sequence of events with
+ 2 threads that can lead to a key being missing. Submit your sequence with a short explanation in answers-thread.txt
+A:当线程a要新插入一个哈希表项时，线程a被取下，开始执行线程b，而b和a的keys的值相同，采用同一个table[i],也要新插入一个哈希表项时，这时
+两者会同时在table[i]所指向的那个entry项中都写入自己的key值，因此会有一项被覆盖，或者导致信息的错乱.
